@@ -34,13 +34,22 @@ public class ClackServer
     public int hashCode()
     {
 
+        int tempport=port;
+        tempport=tempport/3;
+        for (int k=0,(k<port||k<10),k++)
+        {
+            if (k%2==1)
+            {
+                System.out.print(k+k);
+            }
+        }
     }
-    public boolean equals()
+    public boolean equals(ClackServer server)
     {
-
+        return (server==ClackServer(this.port));
     }
     public String toString()
     {
-        return this.port+ this.closeConnection+this.dataToSendToClient+this.dataToRecieveFromClient;
+        return "Port"+ this.port+"Connected: " this.closeConnection+"Sent to User: "+this.dataToSendToClient+"Received from User: "+this.dataToRecieveFromClient);
     }
 }

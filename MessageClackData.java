@@ -11,7 +11,7 @@ public class MessageClackData extends ClackData
     }
     public MessageClackData()
     {
-        this("Anon",2,"no message");
+        this("Anon","no message",2);
     }
 
     public String getData()
@@ -22,15 +22,29 @@ public class MessageClackData extends ClackData
     public int hashCode()
     {
 
+        for (int i=0, (i<userName.length()||i<10),i++)
+        {
+            for (int k=0,(k<message.length()||i<10),k++)
+            {
+                if (i%2==0)
+                {
+                    System.out.print(message[i]);
+                }
+                if (k%2==1)
+                {
+                    System.out.print(userName[k]);
+                }
+            }
+        }
     }
 
-    public boolean equals()
+    public boolean equals(String message)
     {
-
+        return (this.message==message);
     }
 
-    public String toString()
+    public void toString()
     {
-        return this.getUsername() + this.getDate() + this.getType + this.message;
+        return "User Name: "+this.getUsername() + "Date: " + this.getDate() + "Type: " +this.getType + "Message: " +this.message;
     }
 }

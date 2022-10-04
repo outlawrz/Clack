@@ -42,18 +42,30 @@ public class FileClackData extends ClackData
 
     public int hashCode()
     {
-
+        for (int i=0, (i<fileName().length()||i<10),i++)
+        {
+            for (int k=0,(k<fileContents.length()||i<10),k++)
+            {
+                if (i%2==0)
+                {
+                    System.out.print(fileName[i]);
+                }
+                if (k%2==1)
+                {
+                    System.out.print(fileContents[k]);
+                }
+            }
+        }
     }
 
-    public boolean equals()
+    public boolean equals(String )
     {
-
+        return ((this.fileName==fileName)&&(this.fileContents==fileContents));
     }
 
     public String toString()
     {
-        return this.getUsername() + this.getType() + this.getDate() + this.fileName + this.fileContents;
-
+        return "User Name: "+this.getUsername() + "Type: " +this.getType() + "Date: "this.getDate() + "File Name: " +this.fileName + "File Content: "+this.fileContents;
     }
 
 }

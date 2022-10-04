@@ -68,16 +68,29 @@ public class ClackClient
 
      public int hashcode()
      {
-
+         for (int i=0, (i<userName.length()||i<10),i++)
+         {
+             for (int k=0,(k<hostName.length()||i<10),k++)
+             {
+                 if (i%2==0)
+                 {
+                     System.out.print(userName[i]);
+                 }
+                 if (k%2==1)
+                 {
+                     System.out.print(hostName[k]);
+                 }
+             }
+         }
      }
 
-     public boolean equals()
+     public boolean equals(ClackClient client)
      {
-
+        return (client == ClackClient(this.userName,this.hostName,this.port));
      }
 
      public String toString()
      {
-         return this.getUserName()+this.getHostName()+this.getPort()+this.closeConnection + this.dataToSendToServer + this.dataToReceiveFromServer;
+         return "User Name: " + this.getUserName()+"Host Name: "+ this.getHostName()+"Port: "+ this.getPort()+"Connected: " + this.closeConnection + "Sent to Server: "+ this.dataToSendToServer + "Received from Server: "+this.dataToReceiveFromServer;
      }
 }
