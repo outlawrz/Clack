@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eab424ef-d379-495e-954f-df5fa2dcc246" name="Changes" comment="Commit to Clack">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="eab424ef-d379-495e-954f-df5fa2dcc246" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClackClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClackData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClackServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileClackData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessageClackData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Clack.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +38,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -53,17 +48,6 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="TestClackData" type="JUnit" factoryName="JUnit">
-      <module name="Clack" />
-      <option name="MAIN_CLASS_NAME" value="TestClackData" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -108,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664922666875</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Commit to Clack">
+      <created>1664936457398</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664936457398</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
