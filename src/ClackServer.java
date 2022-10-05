@@ -1,8 +1,8 @@
 public class ClackServer
 {
     private int port;
-    protected boolean closeConnection;
-    protected ClackData dataToRecieveFromClient;
+    protected boolean closeConnection;//true if connection is closed
+    protected ClackData dataToRecieveFromClient; //ClackData object
     protected ClackData dataToSendToClient;
 
     public ClackServer(int port)
@@ -14,7 +14,7 @@ public class ClackServer
     public ClackServer()
     {
         this(7000);
-    }
+    }//default port set to 7000
     public void start()
     {
 
@@ -31,7 +31,7 @@ public class ClackServer
     {
         return port;
     }
-    public int hashCode()
+    public int hashCode() //Computes hashcode using port number
     {
         int hash=0;
         int tempport=port;
@@ -45,11 +45,11 @@ public class ClackServer
         }
         return hash;
     }
-    public boolean equals(ClackServer server)
+    public boolean equals(ClackServer server) //checks if two servers have the same port
     {
         return (server.port == this.port);
     }
-    public String toString()
+    public String toString() // returns all server info as a string
     {
         return ("Port: "+ this.port+" Connected: " + this.closeConnection +" Sent to User: "+ this.dataToSendToClient + " Received from User: "+ this.dataToRecieveFromClient);
     }

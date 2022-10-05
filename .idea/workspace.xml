@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eab424ef-d379-495e-954f-df5fa2dcc246" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/ClackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClackClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClackData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClackData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClackServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClackServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileClackData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileClackData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestClackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestClackClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestClackData.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestClackData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestClackServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestClackServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MessageClackData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MessageClackData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664940496544</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit to Clack">
+      <created>1664941106947</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664941106947</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

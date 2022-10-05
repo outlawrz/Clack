@@ -4,7 +4,7 @@ public class FileClackData extends ClackData
     private String fileName;
     private String fileContents;
 
-    public FileClackData(String username, String fileName,int type)
+    public FileClackData(String username, String fileName,int type) //initializes a FileClackData object
     {
         super(username,type);
         this.fileName=fileName;
@@ -40,7 +40,7 @@ public class FileClackData extends ClackData
 
     }
 
-    public int hashCode()
+    public int hashCode() //computes hashcode using filename, filecontents, and username length
     {
         int hash=0;
         for (int i=0; (i<fileName.length() && i<10);i++)
@@ -70,12 +70,12 @@ public class FileClackData extends ClackData
         return hash;
     }
 
-    public boolean equals(FileClackData file)
+    public boolean equals(FileClackData file)//checks if file has same name and contents
     {
         return ((this.fileName==file.fileName) && (this.fileContents==file.fileContents));
     }
 
-    public String toString()
+    public String toString()//returns all file information in form of a string
     {
         return ("User Name: "+ this.getUserName() + " Type: " +this.getType() + " Date: " + this.getDate() + " File Name: " +this.fileName + " File Content: "+this.fileContents);
     }

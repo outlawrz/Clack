@@ -8,7 +8,7 @@ public class ClackClient
     private ClackData dataToSendToServer;
     private ClackData dataToReceiveFromServer;
 
-    public ClackClient(String userName, String hostName, int port)
+    public ClackClient(String userName, String hostName, int port)//initializes a new Client in clack
     {
         this.userName=userName;
         this.hostName=hostName;
@@ -28,7 +28,7 @@ public class ClackClient
     public ClackClient()
     {
         this("Anon","localhost",7000);
-    }
+    } // uses first constructor to create default constructor
 
     public void start()
     {
@@ -67,7 +67,7 @@ public class ClackClient
          return this.port;
      }
 
-     public String hashcode()
+     public String hashcode() // uses length of username and length of hostname to get hash value
      {
          String hash="";
          for (int i=0; (i<userName.length()&&i<10);i++)
@@ -87,12 +87,12 @@ public class ClackClient
          return hash;
      }
 
-     public boolean equals(ClackClient client)
+     public boolean equals(ClackClient client)//checks if two client objects are equal
      {
         return ((client.userName == this.userName)&&(client.hostName==this.hostName)&&(client.port==this.port));
      }
 
-     public String toString()
+     public String toString() //Returns all information about client as string
      {
          return "User Name: " + this.getUserName()+" Host Name: "+ this.getHostName()+" Port: "+ this.getPort()+" Connected: " + this.closeConnection + " Sent to Server: "+ this.dataToSendToServer + " Received from Server: "+this.dataToReceiveFromServer;
      }

@@ -19,7 +19,7 @@ public class MessageClackData extends ClackData
         return message;
     }
 
-    public int hashCode()//Calculates unique alphabetc hash code based on username and message
+    public int hashCode()//Calculates hash code based on username and message length
     {
         int hash=0;
         for (int i=0; (i<super.username.length() && i<10);i++)
@@ -42,9 +42,9 @@ public class MessageClackData extends ClackData
     public boolean equals(String message)
     {
         return (this.message==message);
-    }
+    }//checks if the messages are equal to each other
 
-    public String toString()
+    public String toString() //returns all message information as a string
     {
         return "User Name: "+this.getUserName() + " Date: " + this.getDate() + " Type: " +this.getType() + " Message: " +this.message;
     }

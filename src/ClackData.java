@@ -1,6 +1,6 @@
 
 import java.util.Date;
-public abstract class ClackData
+public abstract class ClackData // is abstract so subclasses must implement abstract methods
 {
     protected String username; //Protected Variables in CLackData class protected variables can be referenced again in subclasses without get method
     protected int type; //This is how we determine what action to take based on constants in the program.
