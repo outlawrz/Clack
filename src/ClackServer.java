@@ -40,7 +40,7 @@ public class ClackServer
         {
             if (k%2==1)
             {
-                hash=hash+(k+k);
+                hash=hash+(tempport);
             }
         }
         return hash;

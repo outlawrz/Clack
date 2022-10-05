@@ -10,13 +10,15 @@ public class TestClackData
         ClackData file2 = new FileClackData("kburns", "ShortStory",3);
 
         System.out.println(message1.toString());
-        System.out.println("Hash Code: " + message1.hashCode());
+        System.out.println("Hash Code Message 1: " + message1.hashCode());
+        System.out.println("Hash Code Message 2: " + message2.hashCode());
         System.out.println(message1.getData());
         System.out.println(message1.equals(message2));
 
 
         System.out.println(file1.toString());
-        System.out.println("Hash Code: " + file1.hashCode());
+        System.out.println("Hash Code File 1: " + file1.hashCode());
+        System.out.println("Hash Code File 2: " + file2.hashCode());
         System.out.println(file1.getData());
         System.out.println(file1.equals(file2));
     }

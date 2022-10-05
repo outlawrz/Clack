@@ -47,32 +47,32 @@ public class FileClackData extends ClackData
         {
             if(fileContents==null)
             {
-                if (i%2==0)
-                {
-                    hash=hash+(fileName.length()*i);
-                }
-                else{
-                    hash=hash+(fileName.length()+i);
+                for (int j=0;j<super.username.length()&&j<10;j++) {
+                    if (i % 2 == 0) {
+                        hash = hash + (fileName.length() * i);
+                    } else {
+                        hash = hash + (fileName.length() + j);
+                    }
                 }
             }
             else
             {
-                for (int k = 0; (k < fileContents.length() && k < 10); k++) {
-                    if (i % 2 == 0) {
-                        hash = hash + (fileName.length() * i);
+                    for (int k = 0; (k < fileContents.length() && k < 10); k++) {
+                        if (i % 2 == 0) {
+                            hash = hash + (fileName.length() * i);
+                        }
+                        if (k % 2 == 1) {
+                            hash = hash * (fileContents.length() + k);
+                        }
                     }
-                    if (k % 2 == 1) {
-                        hash = hash * (fileContents.length() + k);
-                    }
-                }
             }
         }
         return hash;
     }
 
-    public boolean equals(String fileName,String fileContents )
+    public boolean equals(FileClackData file)
     {
-        return ((this.fileName==fileName)&&(this.fileContents==fileContents));
+        return ((this.fileName==file.fileName) && (this.fileContents==file.fileContents));
     }
 
     public String toString()
