@@ -1,0 +1,43 @@
+public ClackClient(String userName, String hostName, int port)//initializes a new Client in clack
+public ClackClient()
+    {
+        this("Anon","localhost",7000);
+    } // uses first constructor to create default constructor
+public String hashcode() // uses length of username and length of hostname to get hash value
+public boolean equals(ClackClient client)//checks if two client objects are equal
+public String toString() //Returns all information about client as string
+
+
+public abstract class ClackData // is abstract so subclasses must implement abstract methods
+protected String username; //Protected Variables in CLackData class protected variables can be referenced again in subclasses without get method
+protected int type; //This is how we determine what action to take based on constants in the program.
+protected Date date; //This creates an object that describes the date that the class is run
+public final int CONSTANT_LISTUSERS=0; //This is one of the constants used along with the type variable used to determine what action to take
+public ClackData(String username, int type) //This constructor is used to create a ClackData object
+this("Anon",type);//"anon stands for ananymous for when no username is given
+public abstract String getData();
+        // This function will be implemented in both the MessageClackData and FileClackData
+        
+
+public ClackServer()
+    {
+        this(7000);
+    }//default port set to 7000
+protected boolean closeConnection;//true if connection is closed
+    protected ClackData dataToRecieveFromClient; //ClackData object
+public int hashCode() //Computes hashcode using port number
+public boolean equals(ClackServer server) //checks if two servers have the same port
+public String toString() // returns all server info as a string
+
+
+public FileClackData(String username, String fileName,int type) //initializes a FileClackData object
+public int hashCode() //computes hashcode using filename, filecontents, and username length
+public boolean equals(FileClackData file)//checks if file has same name and contents
+public String toString()//returns all file information in form of a string
+
+
+public final int CONSTANT_LOGOUT=1; // Constansts along with type let program know what action to take
+super(username,type);//calls constructor in ClackData
+public int hashCode()//Calculates hash code based on username and message length
+public boolean equals(String message)//checks if the messages are equal to each other
+public String toString() //returns all message information as a string
